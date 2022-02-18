@@ -38,5 +38,16 @@ let details = data.map(item => {
        '<div>' + item.name +' '+ item.surname +' - '+ item.age +' lat.'+ '</div>'
    )
 });
-
 info.innerHTML = details.join('\n');
+
+
+const formColor = document.querySelector(".submit");
+function randomColor() {
+    this.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+};
+formColor.addEventListener("click", randomColor);
+
+function change() {
+    const backgroundColorInterval = document.querySelector(".form").style.backgroundColor ="#" + Math.floor(Math.random()*16777215).toString(16);
+}
+setInterval(change, 1500);
