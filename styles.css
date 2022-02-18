@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Yu Gothic Medium", "Lucida Console", Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info div {
+    padding: 3rem;
+    background-color: darkgreen;
+    margin: 0.5rem;
+    border: 2px black solid;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.form {
+    padding: 3rem;
+    background-color: bisque;
+    margin: 0.5rem;
+    border: 2px black solid;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+}
